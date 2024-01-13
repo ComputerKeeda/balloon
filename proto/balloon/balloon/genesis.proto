@@ -1,0 +1,12 @@
+syntax = "proto3";
+package balloon.balloon;
+
+import "gogoproto/gogo.proto";
+import "balloon/balloon/params.proto";
+
+option go_package = "github.com/ComputerKeeda/balloon/x/balloon/types";
+
+// GenesisState defines the balloon module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

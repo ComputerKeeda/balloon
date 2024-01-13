@@ -1,0 +1,7 @@
+syntax = "proto3";
+package balloon.balloon;
+
+option go_package = "github.com/ComputerKeeda/balloon/x/balloon/types";
+
+// Msg defines the Msg service.
+service Msg {}
