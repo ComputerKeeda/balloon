@@ -1,7 +1,20 @@
 syntax = "proto3";
+
 package balloon.balloon;
 
 option go_package = "github.com/ComputerKeeda/balloon/x/balloon/types";
 
 // Msg defines the Msg service.
-service Msg {}
+service Msg {
+  rpc AddBalloon (MsgAddBalloon) returns (MsgAddBalloonResponse);
+}
+message MsgAddBalloon {
+  string creator       = 1;
+  string balloonName   = 2;
+  string balloonHeight = 3;
+}
+
+message MsgAddBalloonResponse {
+  string message = 1;
+}
+

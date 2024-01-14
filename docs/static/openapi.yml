@@ -46474,6 +46474,11 @@ paths:
       tags:
         - Query
 definitions:
+  balloon.balloon.MsgAddBalloonResponse:
+    type: object
+    properties:
+      message:
+        type: string
   balloon.balloon.Params:
     type: object
     description: Params defines the parameters for the module.

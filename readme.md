@@ -16,3 +16,15 @@ so let's create our first message
 ```shell
 ignite scaffold message addBalloon balloonName balloonHeight --response message
 ```
+
+now we will run the chain and perform some transactions
+
+```shell
+ignite chain serve
+```
+
+let's check whether our message works or not
+
+```shell
+balloond tx
+```

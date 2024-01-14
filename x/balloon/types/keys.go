@@ -12,6 +12,8 @@ const (
 
 	// MemStoreKey defines the in-memory store key
 	MemStoreKey = "mem_balloon"
+
+	BalloonStore = "balloon_name/height"
 )
 
 func KeyPrefix(p string) []byte {
