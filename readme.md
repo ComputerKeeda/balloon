@@ -26,5 +26,18 @@ ignite chain serve
 let's check whether our message works or not
 
 ```shell
-balloond tx
+balloond tx balloon add-balloon
 ```
+it should show us something like this 
+
+```shell
+Usage:
+balloond tx balloon add-balloon [balloon-name] [balloon-height] [flags]
+```
+
+Now let's pass the full command
+```shell
+balloond tx balloon add-balloon testballoon 80085 --from alice -y
+```
+
+now go to this url in your browser`http://0.0.0.0:1317/cosmos/tx/v1beta1/txs/<TxHashYouJustGot>` with your tx hash you will see your transaction 
